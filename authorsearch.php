@@ -1,4 +1,4 @@
- <?php
+<?php
 
     if (isset($_POST['search'])) {
         $search = $_POST['valueToSearch'];
@@ -24,45 +24,45 @@
 
     ?>
 
- <!DOCTYPE html>
- <html>
+<!DOCTYPE html>
+<html>
 
- <head>
-     <link rel="stylesheet" type="text/css" href="css/table.css">
-     <title>Search</title>
-     <style>
-         body {
-             margin: 100px;
-         }
-     </style>
- </head>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/table.css">
+        <title>Search</title>
+        <style>
+            body {
+                margin: 100px;
+            }
+        </style>
+    </head>
 
- <body>
-     <div align="center">
-         <h1>Search Results</h1>
-         <form action="authorsearch.php" method="post">
+    <body>
+        <div align="center">
+            <h1>Search Results</h1>
+            <form action="authorsearch.php" method="post">
 
-             <table align="center" border="1" width="80%">
-                 <thead id="header">
-                     <th>Author ID</th>
-                     <th>Author Name</th>
-                     <th>Author Email</th>
-                 </thead>
+                <table align="center" border="1" width="80%">
+                    <thead id="header">
+                        <th>Author ID</th>
+                        <th>Author Name</th>
+                        <th>Author Email</th>
+                    </thead>
 
-                 <!-- populate table from mysql database -->
-                 <?php while ($row = mysqli_fetch_array($search_result)) : ?>
-                     <tr align="center">
-                         <td><?= $row['author_id']; ?></td>
-                         <td><?= $row['author_name']; ?></td>
-                         <td><?= $row['author_email']; ?></td>
-                     </tr>
-                 <?php endwhile; ?>
-             </table>
-         </form>
-         <br><br><br>
-         <a href="authordisplay.php"> <button class="button">Return to author lists</button></a>
-     </div>
+                    <!-- populate table from mysql database -->
+                    <?php while ($row = mysqli_fetch_array($search_result)) : ?>
+                        <tr align="center">
+                            <td><?= $row['author_id']; ?></td>
+                            <td><?= $row['author_name']; ?></td>
+                            <td><?= $row['author_email']; ?></td>
+                        </tr>
+                    <?php endwhile; ?>
+                </table>
+            </form>
+            <br><br><br>
+            <a href="authordisplay.php"> <button class="button">Return to author lists</button></a>
+        </div>
 
- </body>
+    </body>
 
- </html>
+</html>
