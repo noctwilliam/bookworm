@@ -1,0 +1,2 @@
+site.php and cnct.php tu boleh guna untuk login jugak 
+site tu untuk pilih either nak login or aign in

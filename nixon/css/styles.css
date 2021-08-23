@@ -1,0 +1,24 @@
+h1{
+    text-align: center;
+}
+
+div .tukar{
+    width: 70px;
+    height: 300px;
+    border: 1px solid #c3c3c3;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.button{
+    background-color:#333;
+    color:#fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 1px;
+}
+
+.button:hover{
+    background: teal;
+    color: white;
+}
