@@ -24,45 +24,45 @@
 
     ?>
 
- <!DOCTYPE html>
- <html>
+<!DOCTYPE html>
+<html>
 
- <head>
-     <link rel="stylesheet" type="text/css" href="css/table.css">
-     <title>Search</title>
-     <style>
-         body {
-             margin: 100px;
-         }
-     </style>
- </head>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/table.css">
+        <title>Search</title>
+        <style>
+            body {
+                margin: 100px;
+            }
+        </style>
+    </head>
 
- <body>
-     <div align="center">
-         <h1>Search Results</h1>
-         <form action="bookstoresearch.php" method="post">
+    <body>
+        <div align="center">
+            <h1>Search Results</h1>
+            <form action="bookstoresearch.php" method="post">
 
-             <table align="center" border="1" width="80%">
-                 <thead id="header">
-                     <th>Bookstore ID</th>
-                     <th>Bookstore Name</th>
-                     <th>Bookstore Location</th>
-                 </thead>
+                <table align="center" border="1" width="80%">
+                    <thead id="header">
+                        <th>Bookstore ID</th>
+                        <th>Bookstore Name</th>
+                        <th>Bookstore Location</th>
+                    </thead>
 
-                 <!-- populate table from mysql database -->
-                 <?php while ($row = mysqli_fetch_array($search_result)) : ?>
-                     <tr align="center">
-                         <td><?= $row['bookstore_id']; ?></td>
-                         <td><?= $row['bookstore_name']; ?></td>
-                         <td><?= $row['bookstore_location']; ?></td>
-                     </tr>
-                 <?php endwhile; ?>
-             </table>
-         </form>
-         <br><br><br>
-         <a href="bookstoredisplay.php"> <button class="button">Return to bookstore lists</button></a>
-     </div>
+                    <!-- populate table from mysql database -->
+                    <?php while ($row = mysqli_fetch_array($search_result)) : ?>
+                        <tr align="center">
+                            <td><?= $row['bookstore_id']; ?></td>
+                            <td><?= $row['bookstore_name']; ?></td>
+                            <td><?= $row['bookstore_location']; ?></td>
+                        </tr>
+                    <?php endwhile; ?>
+                </table>
+            </form>
+            <br><br><br>
+            <a href="bookstoredisplay.php"> <button class="button">Return to bookstore lists</button></a>
+        </div>
 
- </body>
+    </body>
 
- </html>
+</html>

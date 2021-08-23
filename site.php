@@ -46,21 +46,21 @@ margin-bottom: 20px;
   }
 
   button:hover {
-  	opacity: 1;
+    opacity: 1;
   }
 
   .error {
-   background: #F2DEDE;
-   color: #A94442;
-   padding: 10px;
-   width: 95%;
-   border-radius: 5px;
-   margin: 20px auto;
+    background: #F2DEDE;
+    color: #A94442;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    margin: 20px auto;
   }
 
   hr {
-  	border: 1px solid #f1f1f1;
-  	margin-bottom: 10px;
+    border: 1px solid #f1f1f1;
+    margin-bottom: 10px;
   }
 
 </style>

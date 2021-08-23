@@ -3,7 +3,7 @@ session_start();
 
 if (isset($_SESSION['user_id']) && isset($_SESSION['username'])) {
 
- ?>
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -92,7 +92,7 @@ if (isset($_SESSION['user_id']) && isset($_SESSION['username'])) {
 </html>
 <?php
 }else{
-     header("Location: userlogin.php");
-     exit();
+  header("Location: userlogin.php");
+  exit();
 }
- ?>
+?>

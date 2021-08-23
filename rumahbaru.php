@@ -28,7 +28,7 @@ if (isset($_SESSION['user_id']) && isset($_SESSION['username'])) {
 </html>
 <?php 
 }else{
-     header("Location: adminlogin.php");
-     exit();
+	header("Location: adminlogin.php");
+	exit();
 }
- ?>
+?>
