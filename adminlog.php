@@ -22,37 +22,36 @@ if (isset($_POST['username']) && isset($_POST['password'])){
 		header("Location: adminlogin.php?error=User Name is required");
 		exit();
 	}else if(empty($password)){
-        header("Location: adminlogin.php?error=Password is required");
+        	header("Location: adminlogin.php?error=Password is required");
 		exit();
 	}else{
-    	$sql = "SELECT * FROM admin WHERE username='$username' AND password='$password'";
+    		$sql = "SELECT * FROM admin WHERE username='$username' AND password='$password'";
 
 		$result = mysqli_query($cnct, $sql);
 		
 		if (mysqli_num_rows($result) === 1) {
 			$row = mysqli_fetch_assoc($result);
-            if ($row['username'] === $username && $row['password'] === $password) {
+           		if ($row['username'] === $username && $row['password'] === $password) {
 				$_SESSION['username'] = $row['username'];
-                $_SESSION['firstname'] = $row['firstname'];
-                $_SESSION['user_id'] = $row['user_id'];
-                header("Location: rumahbaru.php");
+                		$_SESSION['firstname'] = $row['firstname'];
+                		$_SESSION['user_id'] = $row['user_id'];
+                		header("Location: rumahbaru.php");
 				exit();
-            }
+            		}
 			else{
 				header("Location: adminlogin.php?error=Incorect User name or password");
 				exit();
 			}
-        }
+        	}
 		else{
 			header("Location: adminlogin.php?error=Incorect User name or password");
-            exit();
-        }
-    }
+            		exit();
+        	}
+    	}
 
 }
 else{
 	header("Location: adminlogin.php");
-    exit();
+    	exit();
 }
-
 ?>
