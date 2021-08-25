@@ -12,11 +12,9 @@ if (isset($_POST['username']) && isset($_POST['password'])){
 		$data = stripslashes($data);
 		$data = htmlspecialchars($data);
 		return $data;
-	}       
-
+	}
 	$username = validate($_POST['username']);
 	$password = validate($_POST['password']);
-
 
 	if (empty($username)) {
 		header("Location: adminlogin.php?error=User Name is required");
@@ -48,11 +46,9 @@ if (isset($_POST['username']) && isset($_POST['password'])){
             exit();
         }
     }
-
 }
 else{
 	header("Location: adminlogin.php");
     exit();
 }
-
 ?>
