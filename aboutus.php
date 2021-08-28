@@ -66,7 +66,6 @@ if (isset($_POST['save'])) {
           <h2>Harith Azmi</h2>
           <p class="title">CEO & Founder</p>
           <p>Email: harith2312@gmail.com</p>
-          <p>Contact no: +60 19-758 7365</p>
         </div>
       </div>
     </div>
@@ -77,7 +76,6 @@ if (isset($_POST['save'])) {
           <h2>Aliff Iman</h2>
           <p class="title">Web Designer</p>
           <p>Email: aliffiman2906@gmail.com</p>
-          <p>Contact no: +60 12-779 4565 </p>
         </div>
       </div>
     </div>
@@ -88,7 +86,6 @@ if (isset($_POST['save'])) {
           <h2>Ahmad Raziq</h2>
           <p class="title">Web Designer</p>
           <p>Email: raziqrohaizad08@gmail.com</p>
-          <p>Contact no: +60 13-320 4769</p>
         </div>
       </div>
     </div>
@@ -99,7 +96,6 @@ if (isset($_POST['save'])) {
           <h2>Nixon</h2>
           <p class="title">Writer</p>
           <p>Email: nixonnyangau01@gmail.com</p>
-          <p>Contact no: +60 18-315-9545</p>
         </div>
       </div>
     </div>
