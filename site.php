@@ -6,32 +6,32 @@
   <style>
 
   body {
-background: #CCCFBD;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-flex-direction: column;
-}
+    background: #CCCFBD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
 
-*{
-font-family: sans-serif;
-box-sizing: border-box;
-}
+  *{
+    font-family: sans-serif;
+    box-sizing: border-box;
+  }
 
-form {
-text-align: center;
-width: 300px;
-border: 2px solid #ccc;
-padding: 30px;
-background: #fff;
-border-radius: 15px;
-}
+  form {
+    text-align: center;
+    width: 300px;
+    border: 2px solid #ccc;
+    padding: 30px;
+    background: #fff;
+    border-radius: 15px;
+  }
 
-h2 {
-text-align: center;
-margin-bottom: 20px;
-}
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
 
   button {
   float: center;
