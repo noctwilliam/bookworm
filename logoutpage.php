@@ -2,7 +2,6 @@
 <html>
   <head>
 	<title>The Bookworm</title>
-  </head>
   <style>
 
   body {
@@ -66,7 +65,6 @@ margin-bottom: 20px;
 </style>
 
 <!--ni header kau harith-->
-<head>
     <link href="https://fonts.googleapis.com/css?family=Psoppins%26display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/stylenixon.css">
 </head>
